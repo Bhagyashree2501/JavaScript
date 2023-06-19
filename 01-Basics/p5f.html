@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Use Switch key  
+    </h1>
+    <button onclick="codeHandler()">Execute Grades</button>
+    <input type="text" id="marks" >
+    <label for="" id="result">Result</label><br><br>
+
+    <script>
+
+function codeHandler() {
+    //var key = prompt('Enter to see grades of students');
+            var a = prompt('Enter marks ');
+            //var b = prompt('Enter value of b');
+            // constructor- Number, Boolean, string, Array, Object//
+
+            var marks = Number(a);
+            //var y = Number(b);
+            //var res = 0;
+                   
+                
+                    switch (marks) {
+                
+                    
+                    case (marks >= 70 || marks <= 100):
+                    document.getElementById("result").innerText = "A grade";
+                    break;
+                
+                   
+                    case (marks >=50 || marks < 70):
+                    document.getElementById("result").innerText = "B grade";
+                    break;
+                
+                    
+                    case (marks > 35 || marks < 50):
+                    document.getElementById("result").innerText = "C grade";
+                    break;
+                
+                  
+                    case (marks === 35):
+                    document.getElementById("result").innerText = "D grade";
+                    break;
+                
+                    
+                    default:
+                    document.getElementById("result").innerText = "Fail";
+                }
+}
+            </script>
+</body>
+</html>

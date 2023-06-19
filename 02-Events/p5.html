@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENT</title>
+    <style>
+        div{
+            background-color: teal;
+            color:#fff;
+            padding:12px;
+            width:50%;
+            height:500px;
+            overflow:auto;
+
+        }
+        h4{
+            padding: 10px;
+            background-color: crimson;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>onmousewheel()</h3>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelhandler()">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae reiciendis libero voluptatibus nesciunt tempore perspiciatis, asperiores nulla expedita dignissimos minus quas corrupti culpa optio placeat labore in, vero earum!</p>
+    </div>
+
+    <script>
+        function wheelhandler(){
+            document.getElementById("output").innerHTML = document.getElementById("txt").scrollTop + "px";
+        }
+    </script>
+    
+</body>
+</html>

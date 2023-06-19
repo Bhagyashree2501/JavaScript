@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <lable for="name">Name</lable>
+        <input type="text" name="name" id="name" onkeyup="validateName()">
+        <span id="status"></span>
+
+    </form>
+
+    <script>
+        let x = document.getElementById("name");
+        let status = document.getElementById("status");
+
+    function validateName() {
+        if(x.value.length >= 4 && x.value.length < 10) {
+            status.innerText = "valid input";
+            status.style.color = "green";
+
+        } else {
+            ststus.innerText = "input should be greater than 4 and less han 10 characters";
+            satus.style.color = '#ff0000';
+        }
+    }
+    </script>
+</body>
+</html>

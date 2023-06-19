@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT</title>
+</head>
+<body>
+    <center>
+        <h1>By Creating instance of Object (using new Keyword)</h1>
+    </center>
+    <hr>
+
+    <strong>SYNTAX :</strong>
+    <pre>
+        let objectName = new constructorMethod();
+    </pre>
+
+    <script>
+        document.write();
+        document.writeln();
+        document.getElementById();
+        console.log();
+    </script>
+
+    <script>
+        let empDetails = new Object();
+        document.write(typeof empDetails);
+
+        empDetails.firstName= "Be-practical";
+        empDetails.lastName= "Tech Solution";
+        empDetails.fullName = function(){return this.firstName+" "+this.lastName}
+
+        document.write(empDetails.firstName+"<br>");
+        document.write(empDetails.lastName+"<br>");
+        document.write(empDetails.fullName()+"<br>");
+    </script>
+
+    <br><hr><br>
+
+    <center>
+        <h1>By using an Object cnstructor (using new keyword)</h1>
+    </center>
+
+    <br><hr><br>
+
+    <script>
+
+        let fName, lName;
+
+        function studentInfo(firstName, lastName){
+            document.write(`<h3>First Parameter value is : ${firstName}</h3>`);
+            document.write(`<h3>Second Parameter value is : ${lastName}</h3>`);
+
+            let fn,ln;
+            fn = firstName;
+            ln = lastName;
+
+            document.write(`<h3>First Parameter value is : ${fn}</h3>`);
+            document.write(`<h3>Second Parameter value is : ${ln}</h3>`);
+
+            let fName, lName; //Internal Property
+
+            this.fName = firstName; //Constructor Property
+            this.lName = lastName;
+
+            document.write(`<h3>First Parameter value is : ${fName}</h3>`);
+            document.write(`<h3>Second Parameter value is : ${lName}</h3>`);
+
+        }
+
+        let stud = new studentInfo("Deepa", "Deepa007");
+        console.log("STUD: ", typeof stud)
+        console.log("STUD: ", stud)
+
+        document.write(`<h3>First Parameter value is : ${stud.fName}</h3>`);
+            document.write(`<h3>Second Parameter value is : ${stud.lName}</h3>`);
+
+    </script>
+</body>
+
+</html>

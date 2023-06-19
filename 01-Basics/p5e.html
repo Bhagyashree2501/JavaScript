@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Use Switch key  
+    </h1>
+    <button onclick="codeHandler()">Execute Grades</button>
+
+    <script>
+        function codeHandler() {
+            var grade= prompt('Enter Marks');
+            // var a = prompt('Enter value of a');
+            // var b = prompt('Enter value of b');
+            // // constructor- Number, Boolean, string, Array, Object//
+
+            // var x = Number(a);
+            // var y = Number(b);
+            var res = 0;
+
+            switch(grade){
+                    case grade>=70 || 
+                res(marks >= 70 || marks <= 100);
+                    res= Grade-A;                  
+                    document.write(`<h1>  ${res} </h1>`);
+                    break;
+
+                    case "Grade B":
+                    marks >=50 || marks < 70;
+                    res = Grade-B;
+                    document.write(`<h1>  ${res} </h1>`);
+                    break;
+
+                    case "Grade C":
+                    marks > 35 || marks < 50;
+                    res = Grade-C;
+                    document.write(`<h1>  ${res} </h1>`);
+                    break;
+
+                    case "Grade D":
+                    marks === 35;                                       
+                    res = Grade-D;
+                    document.write(`<h1>  ${res} </h1>`);
+                    break;
+
+                    case "Fail":
+                    marks > 35;
+                    res = Fail;
+                    document.write(`<h1>  ${res} </h1>`);
+
+                    default : document.write(`<h1> Enter Correct Marks</h1>`);
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>
+    
+</body>
+</html>
